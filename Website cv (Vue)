@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kyle Yuan CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <style>
+        .col-sm-4{
+            align-self: center;
+            text-align: center;
+        }
+        .row {
+            margin: 0 auto;
+        }
+        .jumbotron .h1, .jumbotron h1{
+            font-size: 4rem;
+        }
+        .jumbotron{
+            padding: 2rem 0;
+            background-color:#7cc8d847;
+        }
+        .note {
+            color:#73aeb8;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        #myCV {
+            margin-bottom: 1rem;
+        }
+       @media only screen and (max-width: 36rem) {
+        .heading-align > h4 {
+            text-align: center;
+        }
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div id="myCV">
+        <div class="jumbotron text-center">
+            <h1>Kyle Yuan</h1>
+            <h3>Passion for IT</h3>
+        </div>
+        <div class="container" style="margin-top:2rem">
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div v-if="mainDisplay">
+                        <div class="heading-align">
+                           <h4>Personal Statement</h4>
+                            <p> I made a life-changing decision on career shifting during 2017. In the past, I was
+                                involved all in marketing development.After I come to New Zealand I decide to learn programming, something for a long time I
+                                was interested. During the time in Ara, I managed to keep up with the leading group in the class, 
+								although having no background in IT made me panic at start, after all hardworks and sometimes frustration, 
+								I find the funny in it.I am honored to be a coder now.</p>
+                        </div>
+                        <div>
+                            <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                <li class="active">
+                                    <a href="#programming" role="tab" data-toggle="tab">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#education" role="tab" data-toggle="tab">Education& Other Experience</a>
+                                </li>
+                                <li>
+                                    <a href="#work" role="tab" data-toggle="tab">Work Experience</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="programming">
+                                <div class="heading-align">
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li><strong>Coding Skills</strong></li>
+                                        <p>VueJS / ReactJS / NodeJS / HTML 5 / CSS / BootStrap 4 / PHP / MySQL</p>
+                                     
+                                        <li><strong>Interaction Design Skills</strong></li>
+                                        <p>Adobe suites (Photoshop / Dreamweaver / Fireworks / Animate / Premiere) and GoldWave
+										
+										<li><strong>Languages</strong></li>
+                                        <p>Mother language with Mandarin and fluent in English</p>
+									</ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="education">
+                                <div class="heading-align">
+                                    <h4>Education</h4>
+                                    <ul>
+                                        <li><strong>ARA INSTITUTE OF CANTERBURY, School of Computing, Christchurch, New Zealand</strong></li>
+                                        <p style="margin-bottom:0px"><em>Major: software developing</p>
+                                        <p>Graduate Diploma of Information and communication technology, 2018</em></p>
+
+                                        <li><strong>FUDAN UNIVERSITY, School of Journalism, Shanghai, China </strong></li>
+                                        <p style="margin-bottom:0px"><em>Major: communication and in-depth report</p>
+                                        <p>Bachelor of Literature, 2011</em></p>
+                                    </ul>
+									
+									<h4>Other Experience</h4>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Customer Service and Barista,LEO’s Café, Christchurch </strong></li>
+                                        <ul><li type="disc"><p style="margin-bottom:0px">Responsible for front desk cashier</p></li></ul>
+										<ul><li type="disc"><p>Responsible for drinking making</p></li></ul>
+                                        
+                                        <li><strong>Volunteer, South Island Lantern Festival, Christchurch</strong></li>
+                                        <ul><li type="disc"><p style="margin-bottom:0px">Responsible for answering questions about the festival and lost children</p></li></ul>
+										<ul><li type="disc"><p>Questionnaire survey to traveller to collect information for organizers</p></li></ul>
+
+                                        <li><strong>Volunteer, SQLSaturday, Christchurch</strong></li>
+                                        <ul><li type="disc"><p style="margin-bottom:0px">Activity supporting in Ara campus</p></li></ul>
+										<ul><li type="disc"><p>Information summary</p></li></ul>	
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="work">
+                                <div class="heading-align">
+                                    <h4>Work Experience</h4>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Website Specialist (part time), e-Rental Property Management Company, Christchurch</strong></li>
+                                        <ul><li type="disc"><p>Tested and fixed e-Rental website, which were developed by previous developer using WordPress</p></li></ul>
+										<ul><li type="disc"><p>Set up hosting and modified CSS of the e-Furniture website</p></li></ul>
+										<ul><li type="disc"><p>Cooperated with company members updated website layout and information</p></li></ul>
+                                        
+                                        <li><strong>School Project (Interaction Designing), Ara, Christchurch</strong></li>
+                                        <ul><li type="disc"><p>Created official website for Ara accommodation by using interaction design knowledge</p></li></ul>
+										<ul><li type="disc"><p>Optimized performance with group of five</p></li></ul>
+
+                                        <li><strong>School Project (Software developing), Ara, Christchurch</strong></li>
+                                        <ul><li type="disc"><p>Developed a Moodle3 project including different type of quizzes using HTML, CSS, JavaScript and project management</p></li></ul>
+										<ul><li type="disc"><p>Optimized performance with group of two</p></li></ul>
+
+                                        <li><strong>Key Account Manager, Aloys F. Dornbracht GmbH & Co. KG, Shanghai, China</strong></li>
+                                        <ul><li type="disc"><p>Sought cooperation opportunities with hotel management companies in East China. Within four years, established cooperation with companies such as Starwood, Hilton, Fairmont Raffles, Radisson, Banyan Tree and Marriott</p></li></ul>
+										<ul><li type="disc"><p>Maintained and consolidated the cooperation with company’s strategic partner in East China</p></li></ul>
+										<ul><li type="disc"><p>Lead on the management and coordination of kitchen faucet business with dealers</p></li></ul>
+										<ul><li type="disc"><p>Established cooperation with the cupboard Suppliers in Shanghai area and displayed our products in their showrooms</p></li></ul>
+										<ul><li type="disc"><p>Coordinated the work of distributor in Zhejiang area, whose annual Sales are about 40 million RMB</p></li></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="projectDisplay">
+                        <div v-if="webProjectDisplay">
+                            <div class="heading-align">
+                                <h4>Web Development Project</h4>
+                                <ul>
+                                    <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
+                                    <li>Client was interviewed as well as onsite student who live in the accommodation</li>
+                                    <li>Project was carried out using a live server</li>
+                                    <li>Main tools for development includes:
+                                        <ul>
+                                            <li>HTML 5</li>
+                                            <li>CSS</li>
+                                            <li>JQuery(flipping pictures)</li>
+                                            <li>Javascript</li>
+                                        </ul>
+                                    </li>
+                                    <li>Project is still under modification after first presentation to client</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div v-if="javascriptDisplay">
+                            <div class="heading-align">
+                                <h4>Javascript Project</h4>
+                                <ul>
+                                    <li>Javascript Coursework was about designing a Correlation and Regression
+                                        Calculator using different frameworks</li>
+                                    <li>Formula was provided in advance</li>
+                                    <li>Prototype was developed using vary methods:
+                                        <ul>
+                                            <li>UML dynamic diagram</li>
+                                            <li>Use case</li>
+                                            <li>Pseudocode</li>
+                                            <li>Spike solution</li>
+                                        </ul>
+                                    </li>
+                                    <li>Inheritance was used between Classes</li>
+                                    <li>Best effort was made to simplify the code by calling pre-defined functions and
+                                        used StandardJS to tidy up the
+                                        code and structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div v-if="phpDisplay">
+                            <div class="heading-align">
+                                <h4>PHP project</h4>
+                                <ul>
+                                    <li>PHP Coursework</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="btn-group-vertical">
+                        <h4>Project Explanation</h4>
+                        <button type="button" class="btn btn-outline-primary" @click="displayWebProject">Web
+                            Development Project</button>
+                        <button type="button" class="btn btn-outline-secondary" @click="displayJSProject">Javascript
+                            Project</button>
+                        <!-- <button type="button" class="btn btn-outline-success" @click="displayPHPProject">PHP Project</button> -->
+                        <br />
+                        <button type="button" class="btn btn-info" @click="resetDiaplay">Show Profile</button>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="heading-align">
+                        <h4>Interests and Activities</h4>
+                        <ul>
+                            <li>Travel enthusiasts, fishing enthusiasts and avid football fans</li>
+                            <li>Enjoy keeping up to date with current affairs, news and trends in the computing industry by subscribing to GitHub and IT industry media</li>
+                            <li>Twenty books a year</li>
+                            <li>Keep physically fit by gym workout and participating in healthy diet classes from website</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <h4>References</h4>
+                    <p v-bind:title="KimH"><strong>Kim Huang</strong> : Head of Quality Assuarance at Ecommistry Ltd</p>
+                    <p v-bind:title="MikeL"><strong>Michael Lance</strong> : Academic Head of Computing Department in
+                        Ara</p>
+                    <p v-bind:title="ChrisB"><strong>Chris Bartlett</strong>: Website Development Tutor in Ara</p>
+                    <span class="note">(When on desktop, please hover the mouse over the names for details!)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            // eslint-disable-line
+            el: "#myCV",
+            data: {
+                experienceDisplay: true,
+                educationDisplay: false,
+                workexperienceDisplay: false,
+                mainDisplay: true,
+                webProjectDisplay: false,
+                javascriptDisplay: false,
+                phpDisplay: false,
+                projectDisplay: false,
+                KimH: 'email: kim.huang@ecommistry.com ',
+				MikeL: 'email: Michael.lance@ara.ac.nz '
+				
+            },
+            methods: {
+                resetDiaplay: function () {
+                    this.mainDisplay = true;
+                    this.projectDisplay = false;
+                },
+                displayWebProject: function () {
+                    this.mainDisplay = false;
+                    this.projectDisplay = true;
+                    this.webProjectDisplay = true;
+                    this.javascriptDisplay = false;
+                    this.phpDisplay = false;
+                },
+                displayJSProject: function () {
+                    this.mainDisplay = false;
+                    this.projectDisplay = true;
+                    this.webProjectDisplay = false;
+                    this.javascriptDisplay = true;
+                    this.phpDisplay = false;
+                },
+                displayPHPProject: function () {
+                    this.mainDisplay = false;
+                    this.projectDisplay = true;
+                    this.webProjectDisplay = false;
+                    this.javascriptDisplay = false;
+                    this.phpDisplay = true;
+                }
+            },
+            created() {
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>
