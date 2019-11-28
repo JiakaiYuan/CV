@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+<title>Home</title>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">    
+<link rel="shortcut icon" href="">  
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- Global CSS -->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+<!-- Theme CSS -->  
+<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="./syntaxhighlighter3/styles/shCore.css">
+<link rel="stylesheet" type="text/css" href="./syntaxhighlighter3/styles/shThemeRDark.css">
+</head> 
+
+<body>
+
+<header class="header">
+	<div class="top-bar container-fluid">
+		<div class="actions">
+			
+		</div><!--//actions-->
+		
+	</div><!--//top-bar-->
+	
+	<div class="intro">
+		<div class="container text-center">
+			<img class="profile-image" src="assets/images/profile-image.png" alt="">
+			<h1 class="name">Jiakai Yuan (Kyle)</h1>
+		</div><!--//container-->
+	</div><!--//intro-->
+	
+	
+	<div class="page-nav-space-holder hidden-xs">
+		<div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+			<div class="container">
+				<ul id="page-nav" class="nav page-nav list-inline">
+					<li><a class="scrollto" href="#about-section">About Me</a></li>
+					<li><a class="scrollto" href="#competences-section">Key Competences</a></li>
+					<li><a class="scrollto" href="#qualifications-section">Qualifications</a></li>
+				</ul><!--//page-nav-->
+			</div>
+		</div><!--//page-nav-wrapper-->
+	</div>
+	
+</header><!--//header-->
+
+<div class="wrapper container">
+	<section id="about-section" class="about-section section">
+		<h2 class="section-title">About Me</h2>
+		<script type="syntaxhighlighter" class="brush: php;">
+		<![CDATA[
+			<?php
+			/**
+			* About Me
+			*/
+			class Me{
+
+				public $Name = 'Jiakai Yuan';
+
+				public $Address = '48 Platinum Dr, Christchurch';
+
+				public $Tel = '022 526 3896';
+
+				public $Email = 'hereiskyleyuan@gmail.com';
+
+				public $Profile = [
+					'In difference to my IT experience, after I graduated by a journalism degree, I focus on customer communication and developing.In my last job in China, I was in charge of key account management for a Germany faucet manufacturing company (Dornbracht) at mainland China. ',
+					'However, my interest tells me that Digital Work is what I want. My coding and communication skills have prepared me for a variety of tasks. I can use HTML, CSS, JavaScript for my front-end developing work, and Adobe Suite, Photoshop for my UI/UX designing work. I am an easy-going man who is a fast learner and always work on time.',
+					'My goal is to contribute through my efforts and my passion. I would welcome a challenging position, as I know I would benefit from the experience.'
+				];
+
+			}
+		]]>
+		</script>
+	</section><!--//section-->
+	<section id="competences-section" class="competences-section section">
+		<h2 class="section-title">Key Competences</h2>
+		<script type="syntaxhighlighter" class="brush: php;">
+		<![CDATA[
+			<?php
+			/**
+			* Key Competences
+			*/
+			class KeyCompetences extends Me{
+
+				public function coding_skills() {
+
+					return [
+
+						'Front-end' => [
+							'Be able to do developing and maintaining Patent Search System project with using JavaScript, HTML and CSS',
+							'Using Vue, React, Angular and Bootstrap to develop a CRUD project on Moodle3 at Ara institute'
+						],
+
+						'Back-end' => [
+							'Using PHP and MySQL to develop an online quiz industry project on Moodle3 at Ara institute'
+						]
+					];
+
+				}
+
+				public function interaction_design_skills() {
+					
+					return [
+
+						'UI design' => [
+							'Self-studying Illustrator and Sketch'
+						],
+
+						'Multimedia Design' => [
+							'Familiar with using Adobe suites(Photoshop, Dreamweaver, Fireworks, Animate, Premiere) and Goldwave'
+						]
+					];
+				}
+
+				public function time_management_and_organizational_skills() {
+				
+					return 'Ability to prioritize and manage tasks to meet strict deadlines.';
+
+				}
+
+				public function energy_and_enthusiasm() {
+				
+					return 'Always willing to learn and try out new skills as required and have been proven to be a fast learner with minimal encouragement.';
+
+				}
+
+			}
+		]]>
+		</script>
+	</section><!--//section-->
+	
+	<section id="qualifications-section" class="qualifications-section section">
+		<h2 class="section-title">Qualifications</h2>
+		<script type="syntaxhighlighter" class="brush: php;">
+		<![CDATA[
+			<?php
+			/**
+			* Key Competences
+			*/
+			class Qualifications extends Me{
+
+				const Jul2017_Dec2018 = 'Graduate Diploma of Information and communication technology (software develop major), Ara Institute of Canterbury';
+
+				const Sep2007_Jul2011 = 'Bachelor of Literature (journalism major), Fudan University';
+
+			}
+		]]>
+		</script>
+	</section><!--//section-->
+	
+<footer class="footer text-center">
+	<div class="container">
+		<small class="copyright">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></small>
+	</div><!--//container-->
+</footer>
+
+<!-- Javascript -->          
+<script type="text/javascript" src="assets/plugins/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+<script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script>  
+
+<!-- custom js -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+<script src="assets/js/demo/style-switcher.js"></script>     
+<script type="text/javascript" src="./syntaxhighlighter3/scripts/shCore.js"></script>
+<script type="text/javascript" src="./syntaxhighlighter3/scripts/shBrushPhp.js"></script>
+<script type="text/javascript">$(function () {
+// Line wrap back
+var shLineWrap = function () {
+    $('.syntaxhighlighter').each(function () {
+        // Fetch
+        var $sh = $(this),
+            $gutter = $sh.find('td.gutter'),
+            $code = $sh.find('td.code')
+            ;
+        // Cycle through lines
+        $gutter.children('.line').each(function (i) {
+            // Fetch
+            var $gutterLine = $(this),
+                $codeLine = $code.find('.line:nth-child(' + (i + 1) + ')')
+                ;
+            //alert($gutterLine);
+            // Fetch height
+            var height = $codeLine.height() || 0;
+            if (!height) {
+                height = 'auto';
+            }
+            else {
+                height = height += 'px';
+                //alert(height);
+            }
+            // Copy height over
+            $gutterLine.attr('style', 'height:' + height + '!important'); 
+            // fix by Edi, for JQuery 1.7+ under Firefox 15.0
+            console.debug($gutterLine.height(), height, $gutterLine.text(), $codeLine);
+        });
+    });
+};
+// Line wrap back when syntax highlighter has done it's stuff
+var shLineWrapWhenReady = function () {
+    if ($('.syntaxhighlighter').length === 0) {
+        setTimeout(shLineWrapWhenReady, 10);
+    }
+    else {
+        shLineWrap();
+    }
+};
+// Fire
+shLineWrapWhenReady();
+});
+	SyntaxHighlighter.config.strings.help = '';
+	SyntaxHighlighter.all();
+</script>
+</body>
+</html>
